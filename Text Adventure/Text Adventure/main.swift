@@ -72,7 +72,6 @@ func ParsePlayerCommand()
     }
     
 }
-
 struct Item: Equatable
 {
     init(name: String)
@@ -83,8 +82,10 @@ struct Item: Equatable
 }
 
 
-//Main Body
+//======Main Body======
 var gameOver = false
+var playerInventory: Inventory
+var startingRoom: Room
 
 while(!gameOver)
 {
